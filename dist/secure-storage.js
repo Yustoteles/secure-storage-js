@@ -53,7 +53,7 @@ if (!global.openSecureStorage)
 
 
 	// Setup expired checker
-	global.addEventListener('load', setTimeout(checkExpired, 10000), false);
+	global.addEventListener('load', function(){setTimeout(checkExpired, 10000);}, false);
 }
 
 
